@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Carousel</title>
+    <link rel="stylesheet" href="splide.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+</head>
+
+<body>
+    <!-- Landing Page Wrapper -->
+    <main class="citrusX__wrapper">
+        <!-- Dog Cat boring to bon  carousel section -->
+        <section class="citrusX__tab-area">
+            <div class="citrusXDogCat__tab-container">
+                <h2 class="citrusX__sectionTitle" id="citrusX__boringToBon">
+                    Go from boring to bon appétit
+                </h2>
+                <p class="citrusX__sectionSubhead" id="citrusX__mouthwatering">Combine Nulo kibble with
+                    mouthwatering toppers to enhance their mealtime experience.</p>
+                <!-- product tab main content -->
+                <div class="citrusXDogCat__main-tab-content">
+                    <!-- tab button -->
+                    <div class="citrusXDogCat__ProductCarousel-wrapper">
+                        <div id="citrusXDogCat_ID" class="citrusXDogCat_ID">
+                            <button class="citrusXDogCat__tab_item citrusXDogCat__active_tab"
+                                onclick="filterDogCatProducts('citrusX-Dog-Product')">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/nulo-Icon_Dog"
+                                    alt="Dog icon" />
+                                <p>DOG</p>
+                            </button>
+                            <button class="citrusXDogCat__tab_item"
+                                onclick="filterDogCatProducts('citrusX-Cat-Product')">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/nulo-Icon_Cat"
+                                    alt="Cat icon" />
+                                <p>CAT</p>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- tab button -->
+                    <!-- product content -->
+                    <div class="citrusX-section__tab-content citrusXDogCat__tab-content">
+                        <!-- Dog FOOD product -->
+                        <div id="citrusX-Dog-Product" class="splide citrusXDogCat__Products">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <!-- tab item 01-->
+                                    <div class="citrusXDogCat__Product citrusX-Dog-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/dog/dog-food/dry-dog-food"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:dog:1:kibble:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Kibble_Dog"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Kibble</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        Protein-rich with the first 3–4 ingredients being proteins from
+                                                        animal sources.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                    <!-- tab item 02-->
+                                    <div class="citrusXDogCat__Product citrusX-Dog-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/dog/dog-food/freeze-dried-dog-food-treats"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:dog:2:freezedriedraw:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Freeze-Dried-Raw_Dog"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Freeze-Dried Raw</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        A convenient and safe alternative to fresh and frozen forms of
+                                                        raw food.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                    <!-- tab item 03-->
+                                    <div class="citrusXDogCat__Product citrusX-Dog-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/dog/dog-food/dog-food-broth-and-toppers"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:dog:3:meatypouches:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Meaty-Pouches_Dog"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Meaty Pouches</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        Simply 6 or less ingredients, with real shreds of meat and
+                                                        vegetables in broth.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                    <!-- tab item 04-->
+                                    <div class="citrusXDogCat__Product citrusX-Dog-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/dog/dog-food/dog-food-broth-and-toppers"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:dog:4:bonebroth:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Bone-Broth_Dog"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Bone Broth</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        Slowly simmered and infused with herbs and superfoods for more
+                                                        health benefits.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Dog FOOD product -->
+
+                        <!-- CAT FOOD product -->
+                        <div id="citrusX-Cat-Product" class="splide citrusXDogCat__Products">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <!-- tab item 01-->
+                                    <div class="citrusXDogCat__Product citrusX-Cat-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/cat/cat-food/dry-cat-food"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:cat:1:kibble:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Kibble_Cat"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Kibble</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        Protein-rich with the first 3–4 ingredients being proteins from
+                                                        animal sources.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                    <!-- tab item 02-->
+                                    <div class="citrusXDogCat__Product citrusX-Cat-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/cat/cat-food/freeze-dried-cat-food"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:cat:2:freezedriedraw:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Freeze-Dried-Raw_Cat"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Freeze-Dried Raw</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        A convenient and safe alternative to fresh and frozen forms of
+                                                        raw food.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                    <!-- tab item 03-->
+                                    <div class="citrusXDogCat__Product citrusX-Cat-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/cat/cat-food/cat-food-toppings"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:cat:3:meatypouches:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Meaty-Pouches_Cat"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Meaty Pouches</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        All ingredients are either meat or high-moisture broth to help
+                                                        increase water intake.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                    <!-- tab item 04-->
+                                    <div class="citrusXDogCat__Product citrusX-Cat-Product splide__slide">
+                                        <div class="citrusX-tab-card">
+                                            <a href="https://www.petco.com/shop/en/petcostore/brand/nulo/cat/cat-food/cat-broths-and-food-toppers/cat-broth"
+                                                manual_cm_sp="sponsoredbrandpage:nulo:cat:4:bonebroth:shopnow"
+                                                onclick="clickTrackLink(this);">
+                                                <div class="citrusX-tab-cardImg">
+                                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Bone-Broth_Cat"
+                                                        alt="" />
+                                                </div>
+                                                <div class="citrusX-tab-cardBody citrusXDogCat__cardBody">
+                                                    <h3>Bone Broth</h3>
+                                                    <p class="citrusXDogCat_details">
+                                                        Slowly simmered and infused with herbs and superfoods for more
+                                                        health benefits.
+                                                    </p>
+                                                    <button class="citrusXDogCat__ProductCTA">
+                                                        Shop Now
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- tab item -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End TREATS FOOD product row 03 -->
+                    </div>
+                    <!-- End Product content -->
+                </div>
+                <!-- product tab main content -->
+            </div>
+        </section>
+        <!-- End Dog Cat boring to bon carousel section -->
+    </main>
+    <!-- End Landing Page -->
+
+    <!-- JS Dependency Start-->
+    <script src="splide.js"></script>
+
+    <!-- dogCat.js -->
+    <script src="dog_cat.js"></script>
+    <!-- End JS Dependency -->
+</body>
+
+</html>
