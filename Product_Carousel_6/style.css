@@ -43,9 +43,9 @@ body {
 }
 
 
-/* Scroller styles */
-.citrusXScroller__ProductCarousel-wrapper::-webkit-scrollbar,
-.citrusXArm_Hammer_Scroller__ProductCarousel-wrapper::-webkit-scrollbar {
+/* scroller styles */
+.citrusXscroller__productCarousel-wrapper::-webkit-scrollbar,
+.citrusXcategory_scroller__productCarousel-wrapper::-webkit-scrollbar {
   display: none;
 }
 
@@ -53,10 +53,10 @@ body {
 
 
 
-/* Product Carousel section */
+/* product Carousel section */
 /* tab button style */
-.citrusXScroller__ProductCarousel-wrapper,
-.citrusXArm_Hammer_Scroller__ProductCarousel-wrapper {
+.citrusXscroller__productCarousel-wrapper,
+.citrusXcategory_scroller__productCarousel-wrapper {
   width: 100%;
   max-width: 1273px;
   margin: auto;
@@ -84,8 +84,8 @@ body {
   display: none;
 }
 
-.citrusXScroller__Product,
-.citrusXArm_Hammer_Scroller__Product {
+.citrusXscroller__product,
+.citrusXcategory_scroller__product {
   max-width: 195px;
   width: 100% !important;
   margin: 0px 9px;
@@ -135,7 +135,7 @@ body {
   /*standard size is 4em*/
 }
 
-.citrusXScroller__ProductCTA {
+.citrusXscroller__productCTA {
   border: 0;
   width: 100%;
   background: none;
@@ -149,7 +149,7 @@ body {
   margin: auto;
 }
 
-.citrusXArm_Hammer_Scroller__ProductCTA {
+.citrusXcategory_scroller__productCTA {
   border: 0;
   padding-left: 0;
   background: none;
@@ -162,8 +162,8 @@ body {
   cursor: pointer;
 }
 
-.citrusX__Scroller__Products,
-.citrusX__Arm_Hammer_Scroller__Products {
+.citrusX__scroller__products,
+.citrusX__category_scroller__products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +294,7 @@ body {
     width: max-content;
     margin: 0 auto 20px;
   } */
-  #citrusX-Arm_Hammer_Scroller-Product {
+  #citrusX-category_scroller-product {
     padding-left: 20px;
   }
 
@@ -319,27 +319,27 @@ body {
 
 @media all and (max-width: 575px) {
 
-  .citrusXScroller__Product,
-  .citrusXArm_Hammer_Scroller__Product {
+  .citrusXscroller__product,
+  .citrusXcategory_scroller__product {
     max-width: 195px;
   }
 }
 
 @media screen and (max-width:375px) {
-  #citrusX-Arm_Hammer_Scroller-Product {
+  #citrusX-category_scroller-product {
     padding-left: 12px;
   }
 }
 
-/* Group Product CSS */
+/* Group product CSS */
 
-.citrusX__groupProductShot {
+.citrusX__groupproductShot {
   border: 1px solid #001952;
   border-radius: 10px;
   text-decoration: none;
 }
 
-.citrusX__groupProductShot__item {
+.citrusX__groupproductShot__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,16 +347,16 @@ body {
   margin: auto;
 }
 
-.citrusX__groupProductShotImage{
+.citrusX__groupproductShotImage{
   padding: 0 5px;
 }
 
-.citrusX__groupProductShotImage img {
+.citrusX__groupproductShotImage img {
   max-height: 144px;
   padding-bottom: 30px;
 }
 
-.groupProductCTA {
+.groupproductCTA {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -392,7 +392,7 @@ body {
 }
 
 
-/* End Product Common Scroller CSS Style */
+/* End product Common scroller CSS Style */
 
 /* --------------------------- Footer Start -----------------------------> */
 .citrusX__footer{

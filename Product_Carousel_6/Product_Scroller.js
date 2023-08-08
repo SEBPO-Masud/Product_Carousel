@@ -4,8 +4,8 @@
          --------------------------*/
       // tab  carouseljs
       // initialize product scroller
-      advanceArrowsScroller("citrusX-Scroller-Product");
-      function advanceArrowsScroller(idx) {
+      advanceArrowsscroller("citrusX-scroller-product");
+      function advanceArrowsscroller(idx) {
         var splideElement = "#" + idx;
         var splideDefaultOptions = {
           arrows: true,
@@ -50,18 +50,18 @@
       /* ************************************************************************************** */
       //for tab sweater & loader added
       document.addEventListener("DOMContentLoaded", function () {
-        filterDogCatProducts("citrusX-Scroller-Product");
+        filterDogCatproducts("citrusX-scroller-product");
       });
       // for dog filter function
-      function filterDogCatProducts(c) {
+      function filterDogCatproducts(c) {
         var x, i;
-        x = document.getElementsByClassName("citrusXScroller__Product");
+        x = document.getElementsByClassName("citrusXscroller__product");
         if (c == "all") c = "";
         for (i = 0; i < x.length; i++) {
           RemoveClass(x[i], "citrusTabShow");
           if (x[i].className.indexOf(c) > -1) AddClass(x[i], " citrusTabShow");
         }
-        advanceArrowsScroller(c);
+        advanceArrowsscroller(c);
       }
       function AddClass(element, name) {
         var i, arr1, arr2;
