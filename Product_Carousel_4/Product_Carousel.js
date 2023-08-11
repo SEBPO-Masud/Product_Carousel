@@ -4,7 +4,7 @@
    --------------------------*/
 // tab Carousel js
 // initialize product scroller
-advanceArrows("brandName-SSSS-product");
+advanceArrows("brandName-BakedRecipes-product");
 function advanceArrows(idx) {
     var splideElement = "#" + idx;
     var splideDefaultOptions = {
@@ -52,7 +52,7 @@ function advanceArrows(idx) {
 /* ************************************************************************************** */
 //for tab sweater & loader added
 document.addEventListener("DOMContentLoaded", function () {
-    filterProducts("brandName-SSSS-product");
+    filterProducts("brandName-BakedRecipes-product");
 });
 // for dog filter function
 function filterProducts(c) {
