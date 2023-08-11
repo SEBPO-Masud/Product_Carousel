@@ -103,8 +103,23 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 1120px) {
+  .citrusX__commonCTA {
+    width: 170px;
+    height: 40px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .citrusX__commonCTA {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   /* Common Style */
   .citrusX__commonCTA {
     color: #001952;
@@ -122,6 +137,13 @@ body {
     font-family: "PetcoCircularTT-Bold", arial !important;
     font-weight: 900;
     margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .citrusX__sectionTitle{
+    width: 90%;
+    margin: auto!important;
   }
 }
 
@@ -155,7 +177,7 @@ body {
 
 /* Default CSS */
 
-/* Product Carousel section And Dog Cat Category Section Combined CSS */
+/* Product Carousel CSS */
 /* tab button style */
 .citrusX__productCarousel-wrapper {
   width: 100%;
@@ -173,10 +195,6 @@ body {
   overflow: hidden;
 }
 
-/* #citrusX__exploreBackedRecipies {
-  padding-top: 40px;
-} */
-
 .citrusX__tab-container {
   max-width: 1273px;
   width: 100%;
@@ -188,17 +206,17 @@ body {
 }
 
 .citrusX__Product,
-.citrusX__healthLogvity__product {
+.citrusX__product_item {
   display: none;
 }
 
 .citrusX__Product img,
-.citrusX__healthLogvity__product img {
+.citrusX__product_item img {
   object-fit: contain;
 }
 
 .citrusX-tab-cardImg img,
-.citrusX__healthLogvity__product img {
+.citrusX__product_item img {
   max-width: 100%;
   max-height: 175px;
 }
@@ -241,7 +259,7 @@ body {
 }
 
 .citrusX__Products,
-.citrusX__healthLogvity__product {
+.citrusX__product_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,24 +378,7 @@ body {
   }
 }
 
-@media screen and (min-width: 922px) and (max-width: 1120px) {
-  .citrusX__commonCTA {
-    width: 170px;
-    height: 40px;
-  }
-}
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* .citrusX__commonCTA {
-    width: 150px;
-    height: 40px;
-  } */
-
-  .citrusX__commonCTA {
-    width: 225px;
-    height: 50px;
-  }
-
   .citrusX__productCarousel-wrapper {
     width: max-content;
   }
@@ -399,20 +400,6 @@ body {
     width: 100%;
   }
 
-  .citrusX__commonCTA {
-    font-size: 16px;
-    color: #001952;
-    text-transform: capitalize;
-    background: none;
-    padding: 0;
-    text-decoration: underline !important;
-    font-family: "PetcoCircularTT-Bold", arial !important;
-    font-weight: 900;
-    margin: 0 auto;
-    width: fit-content;
-    height: fit-content;
-  }
-
   .splide__arrows {
     display: none;
   }
@@ -420,13 +407,8 @@ body {
 
 
 @media all and (max-width: 575px) {
-  .citrusX__sectionTitle{
-    width: 90%;
-    margin: auto!important;
-  }
-
   .citrusX__Product,
-  .citrusX__healthLogvity__product {
+  .citrusX__product_item {
     max-width: 195px;
   }
 }
