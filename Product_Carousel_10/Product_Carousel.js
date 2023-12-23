@@ -1,23 +1,23 @@
 // Species 
 function filterSpeciesTab(species) {
 
-  // Hide all elements with class="citrusHills__tabcontent_wrapper" by default */
-  var i, citrusHills__tabcontent_wrapper, citrusHills__speciesTablinks;
-  citrusHills__tabcontent_wrapper = document.getElementsByClassName(
-    "citrusHills__tabcontent_wrapper"
+  // Hide all elements with class="citrusX__tabcontent_wrapper" by default */
+  var i, citrusX__tabcontent_wrapper, citrusX__speciesTablinks;
+  citrusX__tabcontent_wrapper = document.getElementsByClassName(
+    "citrusX__tabcontent_wrapper"
   );
-  for (i = 0; i < citrusHills__tabcontent_wrapper.length; i++) {
-    citrusHills__tabcontent_wrapper[i].style.display = "none";
+  for (i = 0; i < citrusX__tabcontent_wrapper.length; i++) {
+    citrusX__tabcontent_wrapper[i].style.display = "none";
   }
 
   // Show the specific tab content
   document.getElementById(species).style.display = "block";
   console.log(species)
-  if (species === 'citrusHills__species-dog') {
-    filterDogProducts("citrusHills-puppy_Dog-product");
+  if (species === 'citrusX__species-dog') {
+    filterDogProducts("citrusX-puppy_Dog-product");
   } 
   else {
-    filterProducts("citrusHills-kitten_Cat-product");
+    filterProducts("citrusX-kitten_Cat-product");
   }
 }
 
@@ -27,11 +27,11 @@ document.getElementById("defaultOpen").click();
 // Add active class to the current button (highlight it)
 document.addEventListener("DOMContentLoaded", function () {
   // for dog active class filter
-  var dogBtnContainer = document.getElementById("citrusHills__speciesTabBtn");
+  var dogBtnContainer = document.getElementById("citrusX__speciesTabBtn");
   var dogBtns = dogBtnContainer.getElementsByClassName(
-    "citrusHills__speciesTab_item"
+    "citrusX__speciesTab_item"
   );
-  addActiveClass(dogBtns, "citrusHills__species_active_tab");
+  addActiveClass(dogBtns, "citrusX__species_active_tab");
 });
 function addActiveClass(element, activeClass) {
   for (var i = 0; i < element.length; i++) {
@@ -54,7 +54,7 @@ function addActiveClass(element, activeClass) {
    --------------------------*/
 // tab Carousel js
 // initialize product scroller Dog
-advanceArrowsDog("citrusHills-puppy_Dog-product");
+advanceArrowsDog("citrusX-puppy_Dog-product");
 function advanceArrowsDog(idx) {
   var splideElement = "#" + idx;
   var splideDefaultOptions = {
@@ -101,12 +101,12 @@ function advanceArrowsDog(idx) {
 /* ************************************************************************************** */
 //for tab sweater & loader added
 document.addEventListener("DOMContentLoaded", function () {
-  filterDogProducts("citrusHills-puppy_Dog-product");
+  filterDogProducts("citrusX-puppy_Dog-product");
 });
 // for dog filter function
 function filterDogProducts(c) {
   var x, i;
-  x = document.getElementsByClassName("citrusHills__dogProduct");
+  x = document.getElementsByClassName("citrusX__dogProduct");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     RemoveClass(x[i], "citrusDogTabShow");
@@ -140,11 +140,11 @@ function RemoveClass(element, name) {
 // Add active class to the current button (highlight it)
 document.addEventListener("DOMContentLoaded", function () {
   // for dog active class filter
-  var dogBtnContainer = document.getElementById("citrusHillsTabIdDog");
+  var dogBtnContainer = document.getElementById("citrusXTabIdDog");
   var dogBtns = dogBtnContainer.getElementsByClassName(
-    "citrusHills__dog_tab_item"
+    "citrusX__dog_tab_item"
   );
-  addActiveClass(dogBtns, "citrusHills__active_tab_dog");
+  addActiveClass(dogBtns, "citrusX__active_tab_dog");
 });
 function addActiveClass(element, activeClass) {
   for (var i = 0; i < element.length; i++) {
@@ -171,7 +171,7 @@ function addActiveClass(element, activeClass) {
    --------------------------*/
 // tab Carousel js
 // initialize product scroller Cat
-advanceArrows("citrusHills-kitten_Cat-product");
+advanceArrows("citrusX-kitten_Cat-product");
 function advanceArrows(idx) {
   var splideElement = "#" + idx;
   var splideDefaultOptions = {
@@ -218,12 +218,12 @@ function advanceArrows(idx) {
 /* ************************************************************************************** */
 //for tab sweater & loader added
 document.addEventListener("DOMContentLoaded", function () {
-  filterProducts("citrusHills-kitten_Cat-product");
+  filterProducts("citrusX-kitten_Cat-product");
 });
 // for dog filter function
 function filterProducts(c) {
   var x, i;
-  x = document.getElementsByClassName("citrusHills__Product");
+  x = document.getElementsByClassName("citrusX__Product");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     RemoveClass(x[i], "citrusTabShow");
@@ -257,9 +257,9 @@ function RemoveClass(element, name) {
 // Add active class to the current button (highlight it)
 document.addEventListener("DOMContentLoaded", function () {
   // for dog active class filter
-  var dogBtnContainer = document.getElementById("citrusHillsTabId");
-  var dogBtns = dogBtnContainer.getElementsByClassName("citrusHills__tab_item");
-  addActiveClass(dogBtns, "citrusHills__active_tab");
+  var dogBtnContainer = document.getElementById("citrusXTabId");
+  var dogBtns = dogBtnContainer.getElementsByClassName("citrusX__tab_item");
+  addActiveClass(dogBtns, "citrusX__active_tab");
 });
 function addActiveClass(element, activeClass) {
   for (var i = 0; i < element.length; i++) {
